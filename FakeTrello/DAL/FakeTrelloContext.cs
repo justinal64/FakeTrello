@@ -8,5 +8,6 @@ namespace FakeTrello.DAL
 {
     public class FakeTrelloContext : ApplicationDbContext
     {
+
     }
 }
