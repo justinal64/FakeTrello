@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace FakeTrello.Models
 {
@@ -17,6 +18,6 @@ namespace FakeTrello.Models
 
         public ApplicationUser Owner { get; set; }
 
-        public List<ApplicationUser> AttachedUsers { get; set; }
+        public List<Collaborator> Collaborators { get; set; }
     }
 }

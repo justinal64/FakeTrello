@@ -11,8 +11,10 @@ namespace FakeTrello.Models
         [Key]
         public int CollaboratorId { get; set; }
 
+        [Required]
         public string ApplicationUserId { get; set; }
 
+        [Required]
         public int CardId { get; set; }
 
     }
