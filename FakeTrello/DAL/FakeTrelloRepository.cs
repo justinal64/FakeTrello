@@ -137,5 +137,15 @@ namespace FakeTrello.DAL
         {
             throw new NotImplementedException();
         }
+
+        public void EditBoardName(int boardId, string newName)
+        {
+            Board foundBoard = GetBoard(boardId);
+            if(foundBoard != null)
+            {
+                foundBoard.Name = newName;
+                Context.SaveChanges();
+            }
+        }
     }
 }

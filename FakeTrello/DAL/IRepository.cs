@@ -31,6 +31,7 @@ namespace FakeTrello.DAL
         bool AttachUser(string userId, int cardId); // true: successful, false: not successful
         bool MoveCard(int cardId, int oldListId, int newListId);
         bool CopyCard(int cardId, int newListId, string newOwnerId);
+        void EditBoardName(int boardId, string newName);
 
         // Delete
         bool RemoveBoard(int boardId);
