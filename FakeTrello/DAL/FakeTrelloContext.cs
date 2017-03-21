@@ -12,5 +12,6 @@ namespace FakeTrello.DAL
         public virtual DbSet<Board> Boards { get; set; }
         public virtual DbSet<List> Lists { get; set; }
         public virtual DbSet<Card> Cards { get; set; }
+        public object Datebase { get; internal set; }
     }
 }
