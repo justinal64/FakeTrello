@@ -180,9 +180,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DAL\Repository\BoardRepository.cs" />
+    <Compile Include="DAL\Repository\CardRepository.cs" />
     <Compile Include="DAL\FakeTrelloContext.cs" />
-    <Compile Include="DAL\FakeTrelloRepository.cs" />
-    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="Controllers\Contracts\IBoardManager.cs" />
+    <Compile Include="Controllers\Contracts\IBoardQuery.cs" />
+    <Compile Include="Controllers\Contracts\IListRepository.cs" />
+    <Compile Include="Controllers\Contracts\ICardRepository.cs" />
+    <Compile Include="DAL\Repository\ListRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
